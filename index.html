@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moving On Up | Representative Login</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main class="login-card">
+        <div class="heading">
+            <h1>Moving On Up</h1>
+            <p>Moving Representative Login</p>
+        </div>
+
+        <form id="loginForm" novalidate>
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" name="firstName">
+
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" name="lastName">
+
+            <label for="password">Password</label>
+            <div class="password-box">
+                <input type="password" id="password" name="password">
+                <button type="button" id="togglePassword"
+                    aria-label="Show password">Show</button>
+            </div>
+
+            <label for="repId">Representative ID</label>
+            <input type="text" id="repId" name="repId">
+
+            <label for="phone">Phone Number (10 digits)</label>
+            <input type="text" id="phone" name="phone">
+
+            <label for="extension">Phone Extension</label>
+            <input type="text" id="extension" name="extension">
+
+            <label for="email">Email Address</label>
+            <input type="text" id="email" name="email">
+
+            <div class="checkbox-row">
+                <input type="checkbox" id="confirmation"
+                    name="confirmation">
+                <label for="confirmation">
+                    Request email confirmation
+                </label>
+            </div>
+
+            <label for="transaction">Select Transaction</label>
+            <select id="transaction" name="transaction">
+                <option value="">Choose a transaction</option>
+                <option value="Search A Moving Representative's Accounts">
+                    Search A Moving Representative's Accounts
+                </option>
+                <option value="Book a Client's Moving Event">
+                    Book a Client's Moving Event
+                </option>
+                <option value="Cancel A Client's Moving Event">
+                    Cancel A Client's Moving Event
+                </option>
+                <option value="Request Moving Services">
+                    Request Moving Services
+                </option>
+                <option value="Request Additional Moving Services">
+                    Request Additional Moving Services
+                </option>
+                <option value="Create A New Client Account">
+                    Create A New Client Account
+                </option>
+            </select>
+
+            <div class="button-row">
+                <button type="submit" id="submitBtn">
+                    Submit
+                </button>
+                <button type="reset" id="resetBtn">
+                    Reset
+                </button>
+            </div>
+        </form>
+
+        <p class="footer">Moving On Up &copy; 2026</p>
+    </main>
+</body>
+</html>
